@@ -1,5 +1,5 @@
 // tps most of this file comes from https://rizkicitra.dev/blog/improving-performance-in-react to enable code splitting
-// before code splitting one bundle of 750 kB. Not 14 bundles, all less than 330 kB
+// before code splitting one bundle of 750 kB. Now 14 bundles, all less than 330 kB
 
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react-swc'
