@@ -23,6 +23,9 @@
   "include": [
     "src",
   ],
+  "exclude": [
+    "public/store/BerlinBooking.json", // tps - store, ie public/store/BerlinBooking.json, sits on server and should not be included in build and potentially overwrite file on server
+  ],
   "files": [
     "package.json",
   ],

@@ -31,14 +31,14 @@ export default function Description() {
                             </Box>
                         </Box>
                         <Box>
-                            <img src={`${import.meta.env.BASE_URL}/images/lillevaerelsemedsenge.jpg`} />
+                            <img src={`${import.meta.env.BASE_URL}images/lillevaerelsemedsenge.jpg`} />
                         </Box>
                     </Box>
 
 
 
                     <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <img src={`${import.meta.env.BASE_URL}/images/facade.jpg`} />
+                        <img src={`${import.meta.env.BASE_URL}images/facade.jpg`} />
                         <Box marginLeft={5}>
                             <div>
                                 Huset er bygget omkring år 1900 i den charmerende Jugend stil. Lejligheden er nyrenoveret og indrettet smagfuldt med en lys og enkel indretning.
@@ -54,11 +54,11 @@ export default function Description() {
 
                     <Box sx={{ display: 'flex' }} marginTop={5}>
                         <Box>
-                            <img src={`${import.meta.env.BASE_URL}/images/stuemedbordogseng.jpg`}></img>
+                            <img src={`${import.meta.env.BASE_URL}images/stuemedbordogseng.jpg`}></img>
                         </Box>
                         <Box sx={{ width: 1 }}></Box>
                         <Box>
-                            <img src={`${import.meta.env.BASE_URL}/images/plantegning01.jpg`}></img>
+                            <img src={`${import.meta.env.BASE_URL}images/plantegning01.jpg`}></img>
                         </Box>
                     </Box>
 
@@ -68,11 +68,11 @@ export default function Description() {
                             Her findes også opvaskemaskine, vaskemaskine, mikroovn, kaffemaskine, el-koger og andre elektriske artikler.
                             Desuden findes strygebræt og strygejern i værelset.
                         </div>
-                        <img src={`${import.meta.env.BASE_URL}/images/koekken.jpg`} />
+                        <img src={`${import.meta.env.BASE_URL}images/koekken.jpg`} />
                     </Box>
 
                     <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <img src={`${import.meta.env.BASE_URL}/images/badevaerelse.jpg`}></img>
+                        <img src={`${import.meta.env.BASE_URL}images/badevaerelse.jpg`}></img>
                         <div>
                             Badeværelset er med føntørrer, håndklædevarmer og gulvvarme.
                             Der findes ekstra håndklæder i lejligheden som blot skal vaskes og tørres før afrejse.
@@ -80,7 +80,7 @@ export default function Description() {
                     </Box>
 
                     <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <img src={`${import.meta.env.BASE_URL}/images/korridor.jpg`} />
+                        <img src={`${import.meta.env.BASE_URL}images/korridor.jpg`} />
                     </Box>
 
                     <Box sx={{ display: 'flex' }} marginTop={5}>
@@ -91,18 +91,18 @@ export default function Description() {
 
                     <Box sx={{ width: '100%' }} marginTop={5} >
                         <center>
-                            <img src={`${import.meta.env.BASE_URL}/images/header.png`}></img>
+                            <img src={`${import.meta.env.BASE_URL}images/header.png`}></img>
                         </center>
                     </Box>
 
                     <Box sx={{ display: 'flex' }} marginTop={5}>
                         <Box>
-                            <img src={`${import.meta.env.BASE_URL}/images/localmap04.jpg`}></img>
+                            <img src={`${import.meta.env.BASE_URL}images/localmap04.jpg`}></img>
                         </Box>
                         <Box sx={{ width: '100%' }}>
                         </Box>
                         <Box>
-                            <img src={`${import.meta.env.BASE_URL}/images/mauerinmauerpark.jpg`}></img>
+                            <img src={`${import.meta.env.BASE_URL}images/mauerinmauerpark.jpg`}></img>
                         </Box>
                     </Box>
 
@@ -129,7 +129,7 @@ export default function Description() {
                         Bemærk venligst
                     </div>
                     <Box>
-                        <img src={`${import.meta.env.BASE_URL}/images/nosmoking50.png`}></img>
+                        <img src={`${import.meta.env.BASE_URL}images/nosmoking50.png`}></img>
                     </Box>
                     Røgfri lejlighed - rygning kun på balkon.
 

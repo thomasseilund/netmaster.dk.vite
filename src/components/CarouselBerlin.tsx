@@ -22,7 +22,7 @@ export default function CarouselBerlin() {
             {images.map((fileName, index) => (
                 <div key={index} className="slide">
                     {/* Add base from vite.config.js */}
-                    <img src={`${import.meta.env.BASE_URL}/images/${fileName}`} key={index} />
+                    <img src={`${import.meta.env.BASE_URL}images/${fileName}`} key={index} />
                 </div>
             )
             )}
