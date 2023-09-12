@@ -1,9 +1,10 @@
-import { Container, Link, Paper, Typography } from "@mui/material";
+import { Link, Paper, Typography } from "@mui/material";
 import AppBarBerlin from "./AppBarBerlin";
+import { Fragment } from "react";
 
 export default function FAQ() {
     return (
-        <Container>
+        <Fragment>
             <AppBarBerlin />
             <Paper style={{ backgroundColor: "#e6eae8", margin: "5px" }}>
                 <Typography variant="h6">
@@ -73,6 +74,6 @@ export default function FAQ() {
                 Umiddelbart efter ophold sendes nøgle retur
 
             </Paper>
-        </Container>
+        </Fragment>
     )
 }

@@ -1,7 +1,7 @@
 import validator from 'email-validator'
 import emailjs from '@emailjs/browser';
-import { Box, Button, Container, Icon, Paper, TextField, Typography } from "@mui/material";
-import { useEffect, useState } from "react";
+import { Box, Button, Icon, Paper, TextField, Typography } from "@mui/material";
+import { Fragment, useEffect, useState } from "react";
 import AppBarBerlin from "./AppBarBerlin";
 import dayjs, { Dayjs } from 'dayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
@@ -207,7 +207,7 @@ export default function BookingRequest() {
   }
 
   return (
-    <Container>
+    <Fragment>
       <LocalizationProvider dateAdapter={AdapterDayjs}>
         <AppBarBerlin />
         <Paper style={{ backgroundColor: "#e6eae8", margin: "5px" }}>
@@ -258,7 +258,6 @@ export default function BookingRequest() {
                       }}
                       label={field.label}
                       sx={{ m: 1 }}
-                      fullWidth
                       type={field.type}
                     />
                 }
@@ -275,6 +274,6 @@ export default function BookingRequest() {
           </Button>
         </Paper>
       </LocalizationProvider>
-    </Container>
+    </Fragment>
   )
 }

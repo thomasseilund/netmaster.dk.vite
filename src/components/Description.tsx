@@ -1,9 +1,13 @@
-import { Box, Container, Paper } from "@mui/material";
+import { Box, Paper } from "@mui/material";
 import AppBarBerlin from "./AppBarBerlin";
+import { Fragment } from "react";
+import { Image } from 'mui-image'
+
+// https://www.youtube.com/watch?v=K74l26pE4YA
 
 export default function Description() {
     return (
-        <Container>
+        <Fragment>
             <AppBarBerlin />
             <Paper style={{ backgroundColor: "#e6eae8", margin: "5px" }}>
 
@@ -16,9 +20,9 @@ export default function Description() {
 
                 <div>
 
-                    <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <Box>
-                            <Box marginRight={5}>
+                    <Box sx={{ display: 'flex', alignItems: 'flex-start' }} marginTop={5}>
+                        <Box sx={{ flex: 2 }}>
+                            <Box marginRight={1}>
                                 <div>
                                     Vi har en flot istandsat 2-værelses lejlighed i Rodenbergstrasse i Prenzlauer Berg.
                                     Den bliver mest brugt af os selv og vores familie (både tysk og dansk) og venner, men har du lyst til at låne den så læs her:
@@ -30,16 +34,16 @@ export default function Description() {
                                 </div>
                             </Box>
                         </Box>
-                        <Box>
-                            <img src={`${import.meta.env.BASE_URL}images/lillevaerelsemedsenge.jpg`} />
+                        <Box sx={{ flex: 1 }}>
+                            <Image src={`${import.meta.env.BASE_URL}images/lillevaerelsemedsenge.jpg`} />
                         </Box>
                     </Box>
 
-
-
-                    <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <img src={`${import.meta.env.BASE_URL}images/facade.jpg`} />
-                        <Box marginLeft={5}>
+                    <Box sx={{ display: 'flex', alignItems: 'flex-start' }} marginTop={5}>
+                        <Box sx={{ flex: 1 }}>
+                            <Image src={`${import.meta.env.BASE_URL}images/facade.jpg`} />
+                        </Box>
+                        <Box sx={{ flex: 2 }} marginLeft={1}>
                             <div>
                                 Huset er bygget omkring år 1900 i den charmerende Jugend stil. Lejligheden er nyrenoveret og indrettet smagfuldt med en lys og enkel indretning.
                                 Der er plads til 4-5 overnattende personer. Lejligheden er ikke indrettet til mindre børn.
@@ -52,57 +56,59 @@ export default function Description() {
                         </Box>
                     </Box>
 
-                    <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <Box>
-                            <img src={`${import.meta.env.BASE_URL}images/stuemedbordogseng.jpg`}></img>
+                    <Box sx={{ display: 'flex', alignItems: 'flex-start' }} marginTop={5}>
+                        <Box sx={{ flex: 1 }}>
+                            <Image src={`${import.meta.env.BASE_URL}images/stuemedbordogseng.jpg`} />
                         </Box>
-                        <Box sx={{ width: 1 }}></Box>
-                        <Box>
-                            <img src={`${import.meta.env.BASE_URL}images/plantegning01.jpg`}></img>
+                        <Box sx={{ flex: 0.5 }}></Box>
+                        <Box sx={{ flex: 1 }}>
+                            <Image src={`${import.meta.env.BASE_URL}images/plantegning01.jpg`} />
                         </Box>
                     </Box>
 
-                    <Box sx={{ display: 'flex' }} marginRight={5} marginTop={5}>
-                        <div>
+                    <Box sx={{ display: 'flex', alignItems: 'flex-start' }} marginTop={5}>
+                        <Box sx={{ flex: 2 }}>
                             Køkkenet er fuldt udstyret med køkkenredskaber og service.
                             Her findes også opvaskemaskine, vaskemaskine, mikroovn, kaffemaskine, el-koger og andre elektriske artikler.
                             Desuden findes strygebræt og strygejern i værelset.
-                        </div>
-                        <img src={`${import.meta.env.BASE_URL}images/koekken.jpg`} />
+                        </Box>
+                        <Box sx={{ flex: 1 }}>
+                            <Image src={`${import.meta.env.BASE_URL}images/koekken.jpg`} />
+                        </Box>
                     </Box>
 
-                    <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <img src={`${import.meta.env.BASE_URL}images/badevaerelse.jpg`}></img>
-                        <div>
+                    <Box sx={{ display: 'flex', alignItems: 'flex-start' }} marginTop={5}>
+                        <Box sx={{ flex: 1 }}>
+                            <Image src={`${import.meta.env.BASE_URL}images/badevaerelse.jpg`} />
+                        </Box>
+                        <Box sx={{ flex: 2 }} marginLeft={1}>
                             Badeværelset er med føntørrer, håndklædevarmer og gulvvarme.
                             Der findes ekstra håndklæder i lejligheden som blot skal vaskes og tørres før afrejse.
-                        </div>
-                    </Box>
-
-                    <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <img src={`${import.meta.env.BASE_URL}images/korridor.jpg`} />
-                    </Box>
-
-                    <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <div>
-                            Lokalområdet
-                        </div>
-                    </Box>
-
-                    <Box sx={{ width: '100%' }} marginTop={5} >
-                        <center>
-                            <img src={`${import.meta.env.BASE_URL}images/header.png`}></img>
-                        </center>
-                    </Box>
-
-                    <Box sx={{ display: 'flex' }} marginTop={5}>
-                        <Box>
-                            <img src={`${import.meta.env.BASE_URL}images/localmap04.jpg`}></img>
                         </Box>
-                        <Box sx={{ width: '100%' }}>
+                    </Box>
+
+                    <Box sx={{ display: 'flex' }} marginTop={5}>
+                        <Box sx={{ flex: 0.333 }}>
+                            <Image src={`${import.meta.env.BASE_URL}images/korridor.jpg`} />
                         </Box>
-                        <Box>
-                            <img src={`${import.meta.env.BASE_URL}images/mauerinmauerpark.jpg`}></img>
+                    </Box>
+
+                    <Box marginTop={5}>
+                        Lokalområdet
+                    </Box>
+
+                    <Box sx={{ display: "flex", justifyContent: 'center', alignItems: 'flex-start' }} marginTop={5} >
+                        <Image src={`${import.meta.env.BASE_URL}images/underUBahn.png`} />
+                    </Box>
+
+                    <Box sx={{ display: 'flex' }} marginTop={5}>
+                        <Box sx={{flex: 1}}>
+                            <Image src={`${import.meta.env.BASE_URL}images/localmap04.jpg`}/>
+                        </Box>
+                        <Box sx={{flex: 0.5}}>
+                        </Box>
+                        <Box sx={{flex: 1}}>
+                            <Image src={`${import.meta.env.BASE_URL}images/mauerinmauerpark.jpg`}/>
                         </Box>
                     </Box>
 
@@ -129,12 +135,12 @@ export default function Description() {
                         Bemærk venligst
                     </div>
                     <Box>
-                        <img src={`${import.meta.env.BASE_URL}images/nosmoking50.png`}></img>
+                        <Image width={60} height={'auto'} src={`${import.meta.env.BASE_URL}images/nosmoking50.png`}/>
                     </Box>
                     Røgfri lejlighed - rygning kun på balkon.
 
                 </div>
             </Paper>
-        </Container >
+        </Fragment>
     )
 }

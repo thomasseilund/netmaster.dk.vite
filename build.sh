@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# tps 12/9/23 build to test or prod
+
 echo test no old backup file
 test -f vite.config.ts.backup && echo First, remove vite.config.ts.backup && exit 1
 
@@ -26,7 +28,7 @@ elif [ "$1" == "prod" ] ; then
     echo buiding for prod
     echo Log på server med ssh
     echo Fra linode2 /home/tps udføres:
-    echo sudo zip -r /var/www/www.netmaster.dk/`date +%s`.zip /var/www/www.netmaster.dk/htdocs
-    echo sudo rsync -a --exclude=store testspottps/netmaster.dk.vite/ /var/www/www.netmaster.dk/htdocs/ 
+    echo sudo zip -r /var/www/www.netmaster.dk/`date +%s`.zip /var/www/www.netmaster.dk/htdocs \; \\
+    echo sudo rsync -a --exclude=store testspottps/netmaster.dk.vite/ /var/www/www.netmaster.dk/htdocs/  \; \\
     echo sudo chown -R www-data:www-data /var/www/www.netmaster.dk
 fi 

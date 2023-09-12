@@ -5,12 +5,13 @@
 // ReactGA.initialize('UA-3136808-01')
 // ReactGA.pageview(window.location.pathname + window.location.search)
 
-import { Container, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import AppBarBerlin from "./AppBarBerlin";
+import { Fragment } from "react";
 
 export default function Price() {
     return (
-        <Container>
+        <Fragment>
             <AppBarBerlin />
             <Paper style={{ backgroundColor: "#e6eae8", margin: "5px" }}>
                 <div>
@@ -24,6 +25,6 @@ export default function Price() {
                     </ul>
                 </div>
             </Paper>
-        </Container>
+        </Fragment>
     )
 }

@@ -1,9 +1,9 @@
-import { Container, Paper } from "@mui/material";
+import { Paper } from "@mui/material";
 import AppBarBerlin from "./AppBarBerlin";
 import { Calendar, momentLocalizer, Event } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 
 export default function CalendarBookings() {
     const [events, setEvents] = useState<Event[]>([]);
@@ -25,7 +25,7 @@ export default function CalendarBookings() {
     }, [])
 
     return (
-        <Container>
+        <Fragment>
             <AppBarBerlin />
             <Paper style={{ backgroundColor: "#e6eae8", margin: "5px" }}>
                 <Calendar
@@ -37,6 +37,6 @@ export default function CalendarBookings() {
                     style={{ height: 500 }}
                 />
             </Paper>
-        </Container>
+        </Fragment>
     )
 }
