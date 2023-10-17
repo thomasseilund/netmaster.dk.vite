@@ -35,6 +35,7 @@ export default function CalendarBookings() {
                     startAccessor="start"
                     endAccessor="end"
                     style={{ height: 500 }}
+                    views={['month']}
                 />
             </Paper>
         </Fragment>
