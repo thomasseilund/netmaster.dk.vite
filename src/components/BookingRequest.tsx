@@ -72,18 +72,19 @@ export default function BookingRequest() {
       edit: true,
       type: 'number',
     },
-    {
-      name: 'datefrom',
-      label: 'Fra',
-      edit: false,
-      type: 'date',
-    },
-    {
-      name: 'dateto',
-      label: 'Til',
-      edit: false,
-      type: 'date',
-    },
+    // tps 28/3/25 Remove two fields that are not supposed to be here!
+    // {
+    //   name: 'datefrom',
+    //   label: 'Fra',
+    //   edit: false,
+    //   type: 'date',
+    // },
+    // {
+    //   name: 'dateto',
+    //   label: 'Til',
+    //   edit: false,
+    //   type: 'date',
+    // },
     {
       name: 'price',
       label: 'Pris',
@@ -196,7 +197,7 @@ export default function BookingRequest() {
     console.log(templateParams);
 
     // Send email
-    emailjs.send(import.meta.env.VITE_EMAIL_JS_SENDER, 'berlin_booking_request', templateParams, import.meta.env.VITE_EMAIL_JS_USER)
+    emailjs.send('thomasseilund_gmail_com', 'berlin_booking_request', templateParams, 'user_8Uo69EKMoCvpQYjt7RjYy')
       .then(function (response) {
         alert('Message send successfully')
         console.log('SUCCESS!', response.status, response.text)
