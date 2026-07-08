@@ -1,0 +1,31 @@
+/* Make month view grid borders thicker */
+.rbc-month-view, 
+.rbc-header, 
+.rbc-day-bg {
+  border-width: 4px !important;
+  border-color: #000000 !important; /* Adjust color if needed */
+}
+
+/* Make horizontal lines between weeks thicker */
+.rbc-month-row + .rbc-month-row {
+  border-top-width: 4px !important;
+  border-color: #000000 !important; /* Adjust color if needed */
+}
+
+/* Make vertical lines between days thicker */
+.rbc-day-bg + .rbc-day-bg {
+  border-left-width: 4px !important;
+}
+
+/* Center the day numbers horizontally and vertically */
+.rbc-month-row .rbc-date-cell {
+  text-align: center !important;
+  padding: 8px 0 !important; /* Adds spacing above/below the number */
+  width: 100% !important;
+}
+
+/* Ensure the wrapper flexbox centers its children */
+.rbc-date-cell > a {
+  display: inline-block !important;
+  width: 100% !important;
+}

@@ -1,9 +1,12 @@
-import { Paper } from "@mui/material";
+import { Paper, Typography } from "@mui/material";
 import AppBarBerlin from "./AppBarBerlin";
 import { Calendar, momentLocalizer, Event } from "react-big-calendar";
 import moment from "moment";
 import "react-big-calendar/lib/css/react-big-calendar.css";
 import { Fragment, useEffect, useState } from "react";
+
+import "react-big-calendar/lib/css/react-big-calendar.css";
+import "./calendar-styles.css"; // Add your custom styles here
 
 export default function CalendarBookings() {
     const [events, setEvents] = useState<Event[]>([]);
@@ -28,6 +31,12 @@ export default function CalendarBookings() {
         <Fragment>
             <AppBarBerlin />
             <Paper style={{ backgroundColor: "#e6eae8", margin: "5px" }}>
+                <Typography>
+                    Din bookning vises fra den dag du kommer til din sidste hele dag.
+                </Typography>
+                <Typography>
+                    Du skal forlade lejlighed dagen efter inden kl. 10:00.
+                </Typography>
                 <Calendar
                     localizer={localizer}
                     // events={myEventsList}

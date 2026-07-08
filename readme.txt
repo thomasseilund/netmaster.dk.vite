@@ -1,6 +1,7 @@
 Build and install in sub folder on server:
 ==========================================
-./build test | prod
+npm run build
+rsync -av --delete --exclude='store/' dist/ tps@linode2.netmaster.dk:/var/www/www.netmaster.dk/htdocs
 
 Use github official CLI to create public repo on github based on local code:
 ============================================================================
